@@ -11,6 +11,7 @@
 #include <arpa/inet.h>
 #include <sys/wait.h>
 #include <signal.h>
+#include <time.h>
 
 /* 
 этапы
@@ -42,8 +43,11 @@
 #define RESET "\x1B[0m" // example  printf("This is " RED "red" RESET " and this is " BLU "blue" RESET "\n");
 
 #define LEN 10000
-#define PORT "3491"
+//#define PORT "3491"
 #define MAX_CONNECTION 1000
+char PORT[10];
+char path_index[100];
+void cfg_reader();
 char *file_open_and_read(char *s);/// получение и чтение данных из файла
 void *get_in_addr(struct sockaddr *sa);
 int http_request_type(char *recv_message);
@@ -64,7 +68,9 @@ int main(int argc, char *argv[]) //для передачи или порта и�
     char *read_file_buffer;
    // str2[]="<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Example</title>\r\n</head>\r\n<body>\r\n<p>This is an example of a simple HTML page with one paragraph.</p>\r\n</body>\r\n</html>",
     //str3[LEN];
-    read_file_buffer=file_open_and_read(str2);
+    cfg_reader();//заполняем путь и порт из файла конфинурации!
+    
+    read_file_buffer=file_open_and_read(path_index);
 
 
    // strcat(str1, str3);
@@ -256,8 +262,81 @@ char *file_open_and_read(char *s)
   return buffer;
 }
 
+void cfg_reader()
+{
+    char port[256]; int flag_port=0;
+    char path[256]; int flag_path=0;
+    char line[256];
+    char str[100];
+    char standart[]="# coments\nPORT 8080\nPATH www/index.html";
+    int linenum=0;
+    
+    FILE * fp;
+    if((fp=fopen("config.txt", "r+"))==NULL)
+    {
+        printf ("Cannot open file,create new file \n");
+        fp=fopen("config.txt", "a+t");
+        fputs(standart, fp); 
+        /////рекурсивный вызов самой себя 
+        
+    }
+    while(fgets(line, 256, fp) != NULL)
+    {
+        char buff1[256], buff2[256];
 
-// server: got connection from 192.168.0.87
+        linenum++;
+        if(line[0] == '#') continue;
+
+        if(sscanf(line, "%s %s", buff1, buff2) != 2)
+        {
+                fprintf(stderr, "Syntax error, line %d\n", linenum);
+                continue;
+        }
+
+        
+        if (strcmp(buff1,"PORT")==0)
+        {   
+            flag_port=1;
+            strcpy(port,buff2);
+        }
+        if (strcmp(buff1,"PATH")==0)
+        {   
+            flag_path=1;
+            strcpy(path,buff2);
+        }
+    }
+    if (flag_port==0|| flag_path==0)
+    {
+        printf("BAD config file,create new file,old file will be renamed ");
+        long int ttime = time (NULL);
+        strcpy(str,ctime (&ttime));
+
+        for(int i = 0; str[i] != '\0'; i++)
+        {
+        if(str[i]== ' '|| str[i]== '\n')
+        {
+            str[i]='_';
+        }
+        }
+        strcat(str,"config.txt");
+        printf("Получили: %s\n",str);
+        if (-1 == rename ("config.txt",str))
+        printf ("Ошибка переименования файла, удалите configs.txt \n");
+        else 
+        printf ("Выполнено переименование\n");
+        fp=fopen("config.txt", "a+t");
+        fputs(standart, fp);
+        /////рекурсивный вызов самой себя 
+        
+    }
+    strcpy(PORT,port); // переписываю в глобальные переменные
+    strcpy(path_index,path);
+    
+    printf("\tlen_port-%d\n\tlen_path-%d\n",strlen(port),strlen(path));
+    printf("\tport-%s\n\tpath-%s\n",port,path);
+}
+
+// server: got connection from 192.ххх.0.ххх
 // request:
 // GET / HTTP/1.1
 // Host: dilirink.dlinkddns.com:3491
