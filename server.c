@@ -47,7 +47,7 @@
 #define MAX_CONNECTION 1000
 char PORT[10];
 char path_index[100];
-void cfg_reader();
+int cfg_reader();
 char *file_open_and_read(char *s);/// получение и чтение данных из файла
 void *get_in_addr(struct sockaddr *sa);
 int http_request_type(char *recv_message);
@@ -68,7 +68,10 @@ int main(int argc, char *argv[]) //для передачи или порта и�
     char *read_file_buffer;
    // str2[]="<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Example</title>\r\n</head>\r\n<body>\r\n<p>This is an example of a simple HTML page with one paragraph.</p>\r\n</body>\r\n</html>",
     //str3[LEN];
-    cfg_reader();//заполняем путь и порт из файла конфинурации!
+    if (cfg_reader()==-1)
+    {
+        printf("eror cfg_reader"); 
+    }//заполняем путь и порт из файла конфинурации!
     
     read_file_buffer=file_open_and_read(path_index);
 
@@ -262,7 +265,7 @@ char *file_open_and_read(char *s)
   return buffer;
 }
 
-void cfg_reader()
+int cfg_reader()
 {
     char port[256]; int flag_port=0;
     char path[256]; int flag_path=0;
@@ -273,12 +276,13 @@ void cfg_reader()
     
     FILE * fp;
     if((fp=fopen("config.txt", "r+"))==NULL)
-    {
+    {   
         printf ("Cannot open file,create new file \n");
         fp=fopen("config.txt", "a+t");
         fputs(standart, fp); 
+        fclose(fp);
         /////рекурсивный вызов самой себя 
-        
+        fp=fopen("config.txt", "r+");
     }
     while(fgets(line, 256, fp) != NULL)
     {
@@ -305,6 +309,7 @@ void cfg_reader()
             strcpy(path,buff2);
         }
     }
+    fclose(fp);
     if (flag_port==0|| flag_path==0)
     {
         printf("BAD config file,create new file,old file will be renamed ");
@@ -323,16 +328,20 @@ void cfg_reader()
         if (-1 == rename ("config.txt",str))
         printf ("Ошибка переименования файла, удалите configs.txt \n");
         else 
-        printf ("Выполнено переименование\n");
+        {
+            printf ("Выполнено переименование\n");
+            cfg_reader(); return -1;
+        }  
         fp=fopen("config.txt", "a+t");
         fputs(standart, fp);
+        fclose(fp);
         /////рекурсивный вызов самой себя 
         
     }
     strcpy(PORT,port); // переписываю в глобальные переменные
     strcpy(path_index,path);
     
-    printf("\tlen_port-%d\n\tlen_path-%d\n",strlen(port),strlen(path));
+   //printf("\tlen_port-%d\n\tlen_path-%d\n",strlen(port),strlen(path)); //поидеи мусор
     printf("\tport-%s\n\tpath-%s\n",port,path);
 }
 

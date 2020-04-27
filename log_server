@@ -1,0 +1,59 @@
+aga GET zapros prishOOOL
+
+request:
+GET / HTTP/1.1
+Host: dilirink.dlinkddns.com:3491
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+server: got connection from 188.162.15.145
+
+aga GET zapros prishOOOL
+
+easy ERROR not GET / HTTP/1.1
+request:
+GET /IMG_20190126_130510-01.png HTTP/1.1
+Host: dilirink.dlinkddns.com:3491
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dilirink.dlinkddns.com:3491/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+server: got connection from 188.162.15.145
+
+aga GET zapros prishOOOL
+
+easy ERROR not GET / HTTP/1.1
+request:
+GET /dog3.jpg HTTP/1.1
+Host: dilirink.dlinkddns.com:3491s
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dilirink.dlinkddns.com:3491/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+server: got connection from 188.162.15.145
+
+aga GET zapros prishOOOL
+
+easy ERROR not GET / HTTP/1.1
+request:
+GET /dog2.jpg HTTP/1.1
+Host: dilirink.dlinkddns.com:3491
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://dilirink.dlinkddns.com:3491/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
