@@ -1,59 +1,599 @@
+	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
 aga GET zapros prishOOOL
 
-request:
-GET / HTTP/1.1
-Host: dilirink.dlinkddns.com:3491
-Connection: keep-alive
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Accept-Encoding: gzip, deflate
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+0)GET / HTTP/1.1
+for ====0buffer size= 7[31mfile |milka/index.html|  size send html file3
+[0msize read file =16228
+	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
 
-
-server: got connection from 188.162.15.145
-
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
 aga GET zapros prishOOOL
 
-easy ERROR not GET / HTTP/1.1
-request:
-GET /IMG_20190126_130510-01.png HTTP/1.1
-Host: dilirink.dlinkddns.com:3491
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
-Accept: image/webp,image/apng,image/*,*/*;q=0.8
-Referer: http://dilirink.dlinkddns.com:3491/
-Accept-Encoding: gzip, deflate
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
-
-
-server: got connection from 188.162.15.145
-
+server: got connection from 192.168.0.87
+bytes_recvd=380
 aga GET zapros prishOOOL
 
-easy ERROR not GET / HTTP/1.1
-request:
-GET /dog3.jpg HTTP/1.1
-Host: dilirink.dlinkddns.com:3491s
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
-Accept: image/webp,image/apng,image/*,*/*;q=0.8
-Referer: http://dilirink.dlinkddns.com:3491/
-Accept-Encoding: gzip, deflate
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+0)GET /stylefile1.css HTTP/1.1
+for ====15buffer size= 16[33mfile |stylefile1|  size  send any file 0
+[0m[31mfile |stylefile1.css|  size  send any file 0
+[0msize read file =7089
+[31mfile |stylefile1.css|  size  send any file 7089
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
 
-
-server: got connection from 188.162.15.145
-
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
 aga GET zapros prishOOOL
 
-easy ERROR not GET / HTTP/1.1
-request:
-GET /dog2.jpg HTTP/1.1
-Host: dilirink.dlinkddns.com:3491
-Connection: keep-alive
-User-Agent: Mozilla/5.0 (Linux; Android 10; JSN-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Mobile Safari/537.36
-Accept: image/webp,image/apng,image/*,*/*;q=0.8
-Referer: http://dilirink.dlinkddns.com:3491/
-Accept-Encoding: gzip, deflate
-Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+0)GET /TG.png HTTP/1.1
+for ====7buffer size= 7[33mfile |TG|  size  send any file 0
+[0m[31mfile |TG.png|  size  send any file 0
+[0msize read file =4821
+[31mfile |TG.png|  size  send any file 4821
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+0)GET /WA.png HTTP/1.1
+for ====7buffer size= 7[33mfile |WA|  size  send any file 0
+[0m[31mfile |WA.png|  size  send any file 0
+[0msize read file =8171
+[31mfile |WA.png|  size  send any file 8171
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /Site.png HTTP/1.1
+for ====9buffer size= 7[33mfile |Site|  size  send any file 0
+[0m[31mfile |Site.png|  size  send any file 0
+[0msize read file =5807
+[31mfile |Site.png|  size  send any file 5807
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /Inst.png HTTP/1.1
+for ====9buffer size= 7[33mfile |Inst|  size  send any file 0
+[0m[31mfile |Inst.png|  size  send any file 0
+[0msize read file =12952
+[31mfile |Inst.png|  size  send any file 12952
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+0)GET /bootstrap.min.css HTTP/1.1
+for ====18buffer size= 16[33mfile |bootstrap.min|  size  send any file 0
+[0m[31mfile |bootstrap.min.css|  size  send any file 0
+[0msize read file =121457
+[31mfile |bootstrap.min.css|  size  send any file 121457
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+0)GET /VK.png HTTP/1.1
+for ====7buffer size= 7[33mfile |VK|  size  send any file 0
+[0m[31mfile |VK.png|  size  send any file 0
+[0msize read file =3653
+[31mfile |VK.png|  size  send any file 3653
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /Mail.png HTTP/1.1
+for ====9buffer size= 7[33mfile |Mail|  size  send any file 0
+[0m[31mfile |Mail.png|  size  send any file 0
+[0msize read file =3165
+[31mfile |Mail.png|  size  send any file 3165
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /dog2.jpg HTTP/1.1
+for ====9buffer size= 7[33mfile |dog2|  size  send any file 0
+[0m[31mfile |dog2.jpg|  size  send any file 0
+[0msize read file =154779
+[31mfile |dog2.jpg|  size  send any file 154779
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /dog1.jpg HTTP/1.1
+for ====9buffer size= 7[33mfile |dog1|  size  send any file 0
+[0m[31mfile |dog1.jpg|  size  send any file 0
+[0msize read file =191901
+[31mfile |dog1.jpg|  size  send any file 191901
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+0)GET /dog3.jpg HTTP/1.1
+for ====9buffer size= 7[33mfile |dog3|  size  send any file 0
+[0m[31mfile |dog3.jpg|  size  send any file 0
+[0msize read file =168931
+[31mfile |dog3.jpg|  size  send any file 168931
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+0)GET /IMG_20190126_130510-01.png HTTP/1.1
+for ====27buffer size= 28[33mfile |IMG_20190126_130510-01|  size  send any file 0
+[0m[31mfile |IMG_20190126_130510-01.png|  size  send any file 0
+[0msize read file =300808
+[31mfile |IMG_20190126_130510-01.png|  size  send any file 300808
+[0m	port-3491
+	path-milka/
+[31mSTR1
+HTTP/1.1 200 OK
+Server: Web Server in C
+Content-Type: text/html
+
+[0m[31mSTR3
+Fa°áð‡½[0mserver: got connection from 192.168.0.87
+bytes_recvd=482
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=380
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=383
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=413
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=393
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=395
+aga GET zapros prishOOOL
+
+server: got connection from 192.168.0.87
+bytes_recvd=441
+aga GET zapros prishOOOL
+
+0)GET /favicon.ico HTTP/1.1
+for ====12buffer size= 7[33mfile |favicon|  size  send any file 0
+[0m[31mfile |favicon.ico|  size  send any file 0
+[0mÐžÑˆÐ¸Ð±ÐºÐ° Ñ„Ð°Ð¹Ð»Ð°|milka/favicon.ico|
