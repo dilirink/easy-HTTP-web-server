@@ -64,11 +64,12 @@ extn extensions[] =
    {".htm", "Content-Type: text/html\r\n\r\n" ,10},
    {".html","Content-Type: text/html\r\n\r\n" ,11},
    {"GET / HTTP/1.1","Content-Type: text/html\r\n\r\n",12},
-   {".php", "Content-Type: text/html\r\n\r\n" ,13},
+   {".php","Content-Type: text/html\r\n\r\n" ,13},
    {".pdf","Content-Type: application/pdf\r\n\r\n",14},
    {".zip","Content-Type: application/octet-stream\r\n\r\n",15},
    {".rar","Content-Type: application/octet-stream\r\n\r\n",16},
    {".css","Content-Type: text/css\r\n\r\n"},
+   {".js","Content-type: application/javascript\r\n\r\n"},
    {0,0} 
 };
 
@@ -98,22 +99,22 @@ int main(int argc, char *argv[]) //для передачи или порта и�
     int http_index_html = 0;//для проверки запроса Index.html
     ////отправляемые данные
     int i;
-    char str1[LEN]="HTTP/1.1 200 OK\r\nServer: Web Server in C\r\nContent-Type: text/html\r\n\r\n",
+    char str1[LEN]="\n\nServer: Web Server in C start!\r\n",
     str2[]="www/index.html";
     char *read_file_buffer;
    // str2[]="<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<title>Example</title>\r\n</head>\r\n<body>\r\n<p>This is an example of a simple HTML page with one paragraph.</p>\r\n</body>\r\n</html>",
     //str3[LEN];
     if (cfg_reader()==-1)
     {
-        printf("eror cfg_reader"); 
+        printf(RED"eror cfg_reader\n"RESET); 
     }//заполняем путь и порт из файла конфинурации!
     
     //read_file_buffer=file_open_and_read(path_index);
 
 
    // strcat(str1, str3);
-    printf(RED"STR1\n%s"RESET, str1);
-    printf(RED"STR3\n%s"RESET, read_file_buffer);
+    printf(CYN"\n%s\n\n"RESET, str1);
+    //printf(RED"STR3\n%s"RESET, read_file_buffer);
 
     memset(&hints, 0, sizeof(struct addrinfo)); //занулили
     hints.ai_family = AF_INET;    /* Allow IPv4 or IPv6 */
@@ -176,7 +177,7 @@ int main(int argc, char *argv[]) //для передачи или порта и�
         inet_ntop(their_addr.ss_family,
         get_in_addr((struct sockaddr *)&their_addr),
         s, sizeof s);
-        printf("server: got connection from %s\n", s);
+        printf(RESET"server: got connection from %s\n", s);
         //////////////////////////////////////////////////////////////////////////////////////выдача get запроса в терминал
         const int request_buffer_size = 65536;
         char      request[request_buffer_size];
@@ -195,7 +196,7 @@ int main(int argc, char *argv[]) //для передачи или порта и�
         }
         if (http_get_errors == 2)
         {
-            printf("\naga GET zapros prishOOOL\n\n");
+            printf(RESET"\naga GET zapros prishOOOL\n\n");
             
             //http_index_html=strncmp(request, "GET / HTTP/1.1",14); /////////////// ищем в первых 14 символах нужные нам символы
            
@@ -276,15 +277,17 @@ int http_request_type(char *recv_message)
 }
 
 char *file_open_and_read(char *s)
-{
+{ 
+  char *eror="EROR204";
     
   FILE * ptrFile = fopen( s , "r+b" );
  
-  if (ptrFile == NULL)
+  if (ptrFile == NULL) //обраюотка ошибки 204 нет контента
   {
-     // fputs("Ошибка файла|%s|\n",s, stderr);
+      
       printf("Ошибка файла|%s|\n",s);
-      exit(1);
+      return eror;
+     // exit(1);
   }
  
   // определяем размер файла
@@ -309,10 +312,6 @@ char *file_open_and_read(char *s)
  printf("size read file =%d\n",size_file_open_and_read);
   //содержимое файла теперь находится в буфере
  // puts(buffer);
-
- 
- 
- 
    // завершение работы
   fclose (ptrFile);
 
@@ -399,7 +398,7 @@ int cfg_reader()
     strcpy(path_index,path);
     
    //printf("\tlen_port-%d\n\tlen_path-%d\n",strlen(port),strlen(path)); //поидеи мусор
-    printf("\tport-%s\n\tpath-%s\n",port,path);
+    printf("\ncfg read:\n\tport-%s\n\tpath-%s\n",port,path);
 }
 
 
@@ -411,7 +410,8 @@ int get_searcher(char *s,int fd_new)
    char buffer2[256];
    FILE *mf;
     char str1[LEN]="HTTP/1.1 200 OK\r\nServer: Web Server in C\r\n",
-    str2[]="www/index.html";
+    str2[]="www/index.html",
+    eror[LEN]="HTTP/1.1 204 No Content\r\nServer: Web Server in C\r\n";
    // read_file_buffer=file_open_and_read(char *s)
 
    // if (send(new_fd, str1, strlen(str1), 0) == -1)
@@ -424,7 +424,7 @@ int get_searcher(char *s,int fd_new)
         
         
         if(lo!=NULL)
-        {  printf("for ====%d",(int)(lo-s));
+        {  //printf("for ====%d",(int)(lo-s));
             for (int bf=5,fb=0; bf<(int)(lo-s);fb++,bf++)
         {
             
@@ -466,7 +466,7 @@ int get_searcher(char *s,int fd_new)
             strcpy(buffer,path_index);
             strcat(buffer,"index.html");
 
-            printf(RED"file |%s|  size send html file%d\n"RESET,buffer,strlen(read_file_buffer));
+           // printf(RED"file |%s|  size send html file%d\n"RESET,buffer,strlen(read_file_buffer));
             read_file_buffer = file_open_and_read(buffer);
             if (send(fd_new,str1 , strlen(str1), 0) == -1)
             perror("EROR in send in get_searcher");
@@ -484,10 +484,16 @@ int get_searcher(char *s,int fd_new)
             printf(YEL"file |%s|  size  send any file %d\n"RESET,buffer);
             strcat(buffer,extensions[i].ext);
             strcat(buffer2,buffer);
-            printf(RED"file |%s|  size  send any file %d\n"RESET,buffer,size_file_open_and_read);
+            printf(BLU"file |%s|  size  send any file %d\n"RESET,buffer,size_file_open_and_read);
             //path_index
             read_file_buffer = file_open_and_read(buffer2);
-            printf(RED"file |%s|  size  send any file %d\n"RESET,buffer,size_file_open_and_read);
+            if (strstr(read_file_buffer,"EROR204")!=NULL) //обрабатываем момент что файла нету в дериктории
+            {   
+                printf(RED"file EROR sen 204 No Content\n"RESET);
+                if (send(fd_new,    eror , strlen(eror), 0) == -1)
+                perror("EROR in send in get_searcher");
+            }
+            printf(BLU"file |%s|  size  send any file %d\n"RESET,buffer,size_file_open_and_read);
             if (send(fd_new,    str1 , strlen(str1), 0) == -1)
             perror("EROR in send in get_searcher");
             if (send(fd_new, extensions[i].mediatype , strlen(extensions[i].mediatype), 0) == -1)
