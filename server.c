@@ -60,6 +60,7 @@ extn extensions[] =
    {".rar","Content-Type: application/octet-stream\r\n\r\n",16},
    {".css","Content-Type: text/css\r\n\r\n"},
    {".js","Content-type: application/javascript\r\n\r\n"},
+   {".mp4", "Content-Type: video/mp4\r\n\r\n" ,1},
    {0,0} 
 };
 
@@ -177,6 +178,7 @@ int main(int argc, char *argv[]) //для передачи или порта и�
         if (http_get_errors == 1)
         {
             printf("\nprishlo chto to strannoe\n");
+            printf("\nmassage\n\n "YEL"%s\n\n\n"RESET,request);
         }
         if (http_get_errors == 2)
         {
