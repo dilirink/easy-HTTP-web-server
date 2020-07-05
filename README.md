@@ -1,3 +1,3 @@
 # easy-HTTP-web-server
 2 недели ада угрызения совести отвал 5 точки 
-выведу его по адресу dilirink.dlinkddns.com:3500
+выведу его по адресу http://dilirink.ddns.net:3500/
